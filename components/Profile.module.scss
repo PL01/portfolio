@@ -1,0 +1,29 @@
+
+
+.profileInfo {
+    background-color: rgba(255, 233, 88, 0.6);
+    margin: 5px 0px;
+    color: var(--color-white);
+}
+
+.pfp > img {
+    border-radius: 50%;
+    max-width: 50%;
+}
+
+div.row{
+    width: 100%;
+}
+
+.profileImage{
+    border-radius: 30rem;
+    max-width: 75%;
+}
+
+.alignContent{
+    height: 624px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}

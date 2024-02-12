@@ -5,6 +5,8 @@ import { headers } from 'next/headers';
 import '@root/global.scss';
 
 import DefaultLayout from '@components/DefaultLayout';
+import Navbar from '@components/Navbar';
+import Profile from '@root/components/Profile';
 
 export async function generateMetadata({ params, searchParams }) {
   const title = Package.name;
@@ -73,6 +75,10 @@ export default async function Page(props) {
           gtag('config', 'GA_MEASUREMENT_ID');
         `}
       </Script>
+      
+      <Navbar></Navbar>
+      <Profile></Profile>
+
       Explore the array of templates offered by{' '}
       <a href="https://github.com/internet-development/nextjs-sass-starter" target="_blank">
         nextjs-sass-starter

@@ -29,7 +29,6 @@ function ExampleNoSections(props) {
         onHandleShowSubNavigation={() => setModal({ name: 'NAVIGATION' })}
       />
       <Content>
-        <H1>nextjs-sass-starter</H1>
         <H1Sub>
           A lightweight website template to test our design system. You can view this template on GitHub and see how we write websites. <br />
           <br />
