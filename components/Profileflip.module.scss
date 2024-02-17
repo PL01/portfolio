@@ -1,0 +1,37 @@
+/* components/ProfileFlip.module.scss */
+.profileFlip {
+    perspective: 1000px;
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+}
+  
+.flipper {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  cursor: pointer;
+
+  &.flipped {
+    transform: rotateY(180deg);
+  }
+
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .front {
+    background: url('../public/pfp_temp.jpg') center/cover;
+  }
+
+  .back {
+    background: url('../public/pfp_temp_drawing.png') center/cover;
+    transform: rotateY(180deg);
+  }
+}
+  

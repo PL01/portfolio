@@ -7,6 +7,7 @@ import '@root/global.scss';
 import DefaultLayout from '@components/DefaultLayout';
 import Navbar from '@components/Navbar';
 import Profile from '@root/components/Profile';
+import ProfileGrid from '@root/components/ProfileGrid';
 
 export async function generateMetadata({ params, searchParams }) {
   const title = Package.name;
@@ -78,6 +79,8 @@ export default async function Page(props) {
       
       <Navbar></Navbar>
       <Profile></Profile>
+      <ProfileGrid></ProfileGrid>
+
 
       Explore the array of templates offered by{' '}
       <a href="https://github.com/internet-development/nextjs-sass-starter" target="_blank">
