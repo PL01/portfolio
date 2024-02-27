@@ -1,5 +1,6 @@
 .gridImg{
     width: 40rem;
+    // height: 30vh;
 }
 
 .gridContainer {
@@ -29,3 +30,35 @@
       margin-top: 24px;
     }
   }
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    // height: 30vh;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+  
+.active, .collapsible:hover {
+    background-color: #555;
+}
+  
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+
+.exp{
+  &:hover{
+    background-color: red;
+    height: 80vh;
+  }
+}

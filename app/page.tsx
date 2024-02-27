@@ -81,46 +81,47 @@ export default async function Page(props) {
       <Profile></Profile>
       <ProfileGrid></ProfileGrid>
 
-
-      Explore the array of templates offered by{' '}
-      <a href="https://github.com/internet-development/nextjs-sass-starter" target="_blank">
-        nextjs-sass-starter
-      </a>
-      , designed to kick-start your upcoming projects. These templates serve as an ideal foundation, and some even feature real APIs that you can access and integrate if they meet
-      your project's needs.
-      <ul>
-        <li>
-          <a href="/examples">Navigation, hero text</a>
-        </li>
-        <li>
-          <a href="/examples/full-section">Navigation, full browser height sections</a>
-        </li>
-        <li>
-          <a href="/examples/half-section">Navigation, half browser height sections</a>
-        </li>
-        <li>
-          <a href="/examples/no-sections">Navigation, no sections, just components</a>
-        </li>
-        <li>
-          <a href="/examples/forms">Navigation, form components</a>
-        </li>
-        <li>
-          <a href="/examples/authentication">Authentication</a>
-        </li>
-        <li>
-          <a href="/examples/files">File upload and management</a>
-        </li>
-        <li>
-          <a href="/examples/post">Navigation, blog post, footer</a>
-        </li>
-        <li>Invoices</li>
-        <li>Surveys</li>
-        <li>Blog Posts</li>
-        <li>Statements of Work</li>
-        <li>Payment Flow</li>
-        <li>Subscription management</li>
-        <li>Messages</li>
-      </ul>
+      <div className='templateLinks'>
+        Explore the array of templates offered by{' '}
+        <a href="https://github.com/internet-development/nextjs-sass-starter" target="_blank">
+          nextjs-sass-starter
+        </a>
+        , designed to kick-start your upcoming projects. These templates serve as an ideal foundation, and some even feature real APIs that you can access and integrate if they meet
+        your project's needs.
+        <ul>
+          <li>
+            <a href="/examples">Navigation, hero text</a>
+          </li>
+          <li>
+            <a href="/examples/full-section">Navigation, full browser height sections</a>
+          </li>
+          <li>
+            <a href="/examples/half-section">Navigation, half browser height sections</a>
+          </li>
+          <li>
+            <a href="/examples/no-sections">Navigation, no sections, just components</a>
+          </li>
+          <li>
+            <a href="/examples/forms">Navigation, form components</a>
+          </li>
+          <li>
+            <a href="/examples/authentication">Authentication</a>
+          </li>
+          <li>
+            <a href="/examples/files">File upload and management</a>
+          </li>
+          <li>
+            <a href="/examples/post">Navigation, blog post, footer</a>
+          </li>
+          <li>Invoices</li>
+          <li>Surveys</li>
+          <li>Blog Posts</li>
+          <li>Statements of Work</li>
+          <li>Payment Flow</li>
+          <li>Subscription management</li>
+          <li>Messages</li>
+        </ul>
+      </div>
     </DefaultLayout>
   );
 }
