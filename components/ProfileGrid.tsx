@@ -1,15 +1,16 @@
 //ProfileGrid.tsx
 
+import { H1, H2, H2Sub, H3, H3Sub, P } from '@system/typography';
+import { PROFILE_CONTENT } from '@root/content/profile-content';
 import * as React from 'react';
 import * as Utilities from '@common/utilities';
 import gridStyles from '@components/ProfileGrid.module.scss';
+import ProfileCard from '@components/ProfileCard';
 import styles from '@system/layouts/demos/DemoSimpleGrid.module.scss';
-import { H1, H2, H2Sub, H3, H3Sub, P } from '@system/typography';
-import { PROFILE_CONTENT } from '@root/content/profile-content';
-import ProfileCard from './ProfileCard';
 
 export default function ProfileGrid(){
-    const profileCards= PROFILE_CONTENT
+    
+    const profileCards= PROFILE_CONTENT;
 
     return(
         <div className={styles.root}>
