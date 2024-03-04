@@ -1,10 +1,7 @@
-import styles from '@system/layouts/demos/DemoBentoLayout.module.scss';
-
-import * as React from 'react';
-
-import Content from '@system/layouts/Content';
-
 import { H2, H2Sub } from '@system/typography';
+import * as React from 'react';
+import Content from '@system/layouts/Content';
+import styles from '@system/layouts/demos/DemoBentoLayout.module.scss';
 
 export default function DemoBentoLayout(props) {
   return (
