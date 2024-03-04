@@ -1,9 +1,7 @@
-import styles from "@components/ProfileCard.module.scss"
-
 import { H1 } from "@root/system/typography";
 import * as Utilities from '@common/utilities';
 import gridStyles from '@components/ProfileGrid.module.scss';
-
+import styles from "@components/ProfileCard.module.scss"
 
 export default function ProfileCard({heading, description}){
     return (
@@ -15,7 +13,7 @@ export default function ProfileCard({heading, description}){
             <p>{description}</p> }   
             </div>
         </div>
-        {/* {add image} */}
+        <img src='/banner_temp1.jpg' className={Utilities.classNames(gridStyles.gridImg)}></img>
     </div>
     )
 }

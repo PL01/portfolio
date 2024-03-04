@@ -20,7 +20,7 @@ export default function ProfileGrid(){
                         <div className={Utilities.classNames(styles.row, gridStyles.exp)}>
                             <div className={styles.columnWide}>
                                
-                            {profileCards.map((index, card)=>{
+                            {profileCards.map((card, index)=>{
                                 return (
                                     <div key={index} >
                                         <ProfileCard {...card} />
@@ -28,12 +28,6 @@ export default function ProfileGrid(){
                                 )
                             })}
                          
-                            </div>
-
-                            <div className={styles.columnWide}>
-                                <div className={styles.content}>
-                                    <img src='/banner_temp1.jpg' className={Utilities.classNames(gridStyles.gridImg)}></img>
-                                </div>
                             </div>
                         </div>
                        
