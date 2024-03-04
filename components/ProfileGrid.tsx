@@ -1,36 +1,28 @@
 //ProfileGrid.tsx
 
-import { H1, H2, H2Sub, H3, H3Sub, P } from '@system/typography';
 import { PROFILE_CONTENT } from '@root/content/profile-content';
 import * as React from 'react';
 import * as Utilities from '@common/utilities';
 import gridStyles from '@components/ProfileGrid.module.scss';
 import ProfileCard from '@components/ProfileCard';
-import styles from '@system/layouts/demos/DemoSimpleGrid.module.scss';
+import demoStyles from '@system/layouts/demos/DemoSimpleGrid.module.scss';
 
 export default function ProfileGrid(){
     
     const profileCards= PROFILE_CONTENT;
 
     return(
-        <div className={styles.root}>
+        <div className={demoStyles.root}>
             <section className={gridStyles.gridContainer}>
-                <div className={styles.grid}>
+                <div className={demoStyles.grid}>
                     <div className={gridStyles.columnSection}>
-                        <div className={Utilities.classNames(styles.row, gridStyles.exp)}>
-                            <div className={styles.columnWide}>
-                               
-                            {profileCards.map((card, index)=>{
-                                return (
-                                    <div key={index} >
-                                        <ProfileCard {...card} />
-                                    </div>
-                                )
-                            })}
-                         
-                            </div>
-                        </div>
-                       
+                        {profileCards.map((card, index)=>{
+                            return (
+                                <div key={index} className={Utilities.classNames(demoStyles.row, gridStyles.exp)}>
+                                    <ProfileCard {...card} />
+                                </div>
+                            )
+                        })}
                     </div>
                 </div>
             </section>
