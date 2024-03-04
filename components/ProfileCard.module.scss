@@ -1,3 +1,5 @@
+//ProfileCard.module.scss
+
 .columnWide {
     width: 50%;
     padding: 12px;
@@ -15,4 +17,15 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
+}
+
+.image {
+  width: 40rem; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Add this new class to make the content visible on hover */
+.hoverOverContainer:hover .content {
+  max-height: 1000px; /* Adjust to an appropriate value */
+  transition: max-height 0.2s ease-in-out; /* Smooth transition */
 }

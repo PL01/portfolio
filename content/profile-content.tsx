@@ -1,3 +1,5 @@
+//profile-content.tsx
+
 export const PROFILE_CONTENT=[
     {
         heading:'Experience 1',
