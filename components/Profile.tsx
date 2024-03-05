@@ -23,7 +23,6 @@ export default function Profile(){
                 <H2>COMIC ARTIST</H2>
               </div>
             </div>
-            {/* <div className={styles.column}></div> */}
           </div>
         </div>
       </div>
